@@ -19,7 +19,11 @@ var database = [
         password : 'good'
     }
 ]
+// accept username, password & status from the prompt and add it to the database array
+var users = prompt("Please enter the username");
+var pass = prompt("Please enter the password");
 
+//create a function called signIn that accepts two parameters
 function signIn(username, password) {
     for (var i=0; i <database.length; i++) {
         if ((username === database[i].username) && (password === database[i].password)) {
@@ -28,9 +32,6 @@ function signIn(username, password) {
     }
     return false;
 }
-
-var users = prompt("Please enter the username");
-var pass = prompt("Please enter the password");
 
 var check = signIn(users, pass);
 
