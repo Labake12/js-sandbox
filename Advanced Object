@@ -10,6 +10,21 @@ const object3 = object2;
 const object4 = { a: 5}; 
 object1.a = 4;
 
+object1 === object2
+true
+object1 === { a: 5 };
+false
+object2 === object1
+true
+object3 === object2;
+true
+object4 === object1;
+false
+object1 === object3;
+true
+object4 === { a: 5 }
+false
+
 
 //#3 create two classes: an Animal class and a Mamal class. 
 // create a cow that accepts a name, type and color and has a sound method that moo's her name, type and color.
