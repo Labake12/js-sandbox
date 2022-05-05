@@ -4,26 +4,11 @@
 {} === {} False 
 
 //#2 what is the value of property a for each object.
-const object1 = { a: 5 }; 
-const object2 = object1; 
-const object3 = object2; 
-const object4 = { a: 5}; 
-object1.a = 4;
-
-object1 === object2
-true
-object1 === { a: 5 };
-false
-object2 === object1
-true
-object3 === object2;
-true
-object4 === object1;
-false
-object1 === object3;
-true
-object4 === { a: 5 }
-false
+const object1 = { a: 5 }; // 4
+const object2 = object1; //4
+const object3 = object2; //4
+const object4 = { a: 5}; //5
+object1.a = 4; //4
 
 
 //#3 create two classes: an Animal class and a Mamal class. 
@@ -35,7 +20,7 @@ class Animal {
         this.type = type;
         this.color = color;
     }
-    introduce() {
+    cow() {
         console.log('Hi I am a, ${this.name}, I am a ${this.type}, and my color is ${this.color}');
     }
    }
@@ -44,7 +29,7 @@ class Mamal extends Animal {
         super(name, type, color)
         console.log('Mamal', this)
     }
-    play() {
+    cowSound() {
         console.log('MOOOOOO, ${this.name}, ${this.type}, ${this.color}');
     }
 }
