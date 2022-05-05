@@ -34,4 +34,3 @@ class Mamal extends Animal {
     }
 }
 const mamal1 = new Mamal('cow', 'red bororo', 'white');
-const mamal2 = new Mamal('coooowwwww', 'reeeed booooorooorooo', 'whhiiiittee');
